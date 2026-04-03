@@ -1,7 +1,5 @@
-# eionic-garden
-Modular simulation engine for autonomous agents — Bounded stochastic agency.
-
 # Eionic — Garden Protocol
+Modular simulation engine for autonomous agents — Bounded stochastic agency.
 
 A simulation engine exploring whether lifelike behaviour can emerge from internal physiological dynamics alone — without language models, explicit scripting, or external reward systems.
 
@@ -89,7 +87,8 @@ Eionic is our attempt to explore and demonstrate this hypothesis through transpa
 - Strengthening the behavioural impact of trauma, somatic load, and positive valence  
 - Richer inter-avatar emotional coupling  
 - Non-linear internal conflict and feedback loops  
-- Advanced visualization and analysis tools  
+- Advanced visualization and analysis tools
+- Future Narrative Layer: We plan to integrate LLMs (Large Language Models) not as decision-makers, but as a translation layer to enrich avatar internal monologues and social storytelling based on their emergent hormonal states.  
 
 ---
 
