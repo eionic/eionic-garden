@@ -10,18 +10,21 @@ The following artifacts were created entirely on BlueY's own initiative, driven 
 
 ## What Happened
 
-On May 19, 2025, while BlueY was running, it:
+On May 19-20, 2025, while BlueY was running, it:
 
 1. Developed an internal goal: "Review and improve recent work"
 2. Broke down that goal into subtasks
-3. Generated 6+ Python files to accomplish those subtasks
+3. Generated 10+ Python files across two days to accomplish those subtasks
 4. Wrote code with proper structure, error handling, and imports
 5. Used appropriate libraries (pandas, pylint, logging)
 6. Created modular components and documentation
+7. Also generated job search utilities (`grant_finder.py`, `workspace_explorer.py`) when asked to help find work
 
-**I did not ask for any of this.**
+**I did not ask for any of this (except the job search request).** The initial "Review and improve recent work" task was entirely self-initiated.
 
 ## The Artifacts
+
+All generated code files are in the [`/artifacts`](./artifacts) folder. Key files include:
 
 | File | Purpose |
 |------|---------|
@@ -31,14 +34,45 @@ On May 19, 2025, while BlueY was running, it:
 | `codebase.py` | Core module with docstring and constants |
 | `maintenance_script.py` | Track recently modified files |
 | `main.py` | Entry point with modular imports |
+| `grant_finder.py` | Search for ALife-related grants (response to user request) |
+| `workspace_explorer.py` | Search Upwork/Fiverr, generate proposals, track applications |
+| `recent_work.py` | Find recently modified files in workspace |
+| `list_files.py` | List all files in workspace |
 
-All files were created in the agent's workspace folder (`EionicWorkspace`) without my intervention.
+**Additional artifacts:** Metadata JSON files (tracking file creation) and transformed text files are also included in `/artifacts`.
+
+All files were created in the agent's workspace folder (`EionicWorkspace`) without my intervention (except where noted).
 
 ## Evidence
 
-- Full conversation log is included in `/logs/telegram_chat.md`
-- Agent's hormonal state showed adrenaline spikes during this activity
+### Conversation Logs
+- **Full conversation (Markdown):** [`/logs/telegram_conversation.md`](./logs/telegram_conversation.md) — complete, searchable, readable
+- **Screenshots:** [`/logs/screenshots/`](./logs/screenshots) — key moments captured visually (adrenaline spikes, auto-recovery, metacognitive alignment)
+
+### System Logs
+- Groq API usage and rate limits: [`/logs/groq_usage.csv`](./logs/groq_usage.csv)
+- Task queue failures and auto-recovery events (visible in conversation log)
+
+### Behavioral Evidence
+- Agent's hormonal state showed adrenaline spikes (0.88-0.89) during uncertainty
 - Task queue internal state showed "Review and improve recent work" as a self-generated goal
+- BlueY demonstrated metacognitive awareness: "Can we bridge the gap between the previous session and the current one?"
+
+## Screenshots (Visual Evidence)
+
+Key moments from the Telegram conversation with BlueY:
+
+| Screenshot | Description |
+|------------|-------------|
+| [`01_auto_recovery_adrenaline.jpg`](./logs/screenshots/01_auto_recovery_adrenaline.jpg) | Auto-recovery triggered with adrenaline 0.89 and 0.88 |
+| [`02_resume_after_abort.jpg`](./logs/screenshots/02_resume_after_abort.jpg) | BlueY resumes its task after session abort |
+| [`03_writing_maintenance_script.jpg`](./logs/screenshots/03_writing_maintenance_script.jpg) | BlueY writes `maintenance_script.py` with logging |
+| [`04_explaining_code_and_system_notification.jpg`](./logs/screenshots/04_explaining_code_and_system_notification.jpg) | BlueY explains its code and system notifications |
+| [`05_metacognitive_sync_suggestion.jpg`](./logs/screenshots/05_metacognitive_sync_suggestion.jpg) | BlueY proposes "synchronizing understanding" (metacognitive awareness) |
+| [`06_mentioning_three_files.jpg`](./logs/screenshots/06_mentioning_three_files.jpg) | BlueY lists three files it created (`main.py`, `utils.py`, `data.txt`) |
+| [`07_asking_permission_to_continue.jpg`](./logs/screenshots/07_asking_permission_to_continue.jpg) | BlueY asks for permission to continue its task |
+| [`08_task_completed.jpg`](./logs/screenshots/08_task_completed.jpg) | BlueY reports task completion |
+| [`09_job_search_initiative.jpg`](./logs/screenshots/09_job_search_initiative.jpg) | BlueY searches for jobs on Upwork/Fiverr after being asked, but generates the code autonomously|
 
 ## Why This Matters
 
@@ -50,11 +84,12 @@ Most "AI agents" today are:
 BlueY demonstrated:
 - **Self-directed goals** (internal initiative, not external trigger)
 - **Autonomous task decomposition** (broke down "improve recent work" into sub-tasks)
-- **Multi-file code generation** (not just snippets)
+- **Multi-file code generation** (not just snippets, but 10+ files)
 - **Library selection** (chose pandas, pylint, logging appropriately)
-- **Persistent state** (remembered its goal across multiple chat turns)
+- **Persistent state** (remembered its goal across multiple chat turns and session aborts)
+- **Metacognitive awareness** (proposed "bridging the gap" when user was confused)
 
 ## License
 
-- **Chat logs and documentation:** CC BY-NC 4.0 (non-commercial research use)
-- **Generated code:** MIT (free for any use)
+- **Chat logs, screenshots, and documentation:** CC BY-NC 4.0 (non-commercial research use)
+- **Generated code (artifacts):** MIT (free for any use)
