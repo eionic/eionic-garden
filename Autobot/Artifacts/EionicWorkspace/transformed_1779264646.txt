@@ -1,0 +1,14 @@
+import numpy as np
+
+def complex_system_simulation(params):
+    x = np.array([1, 2, 3])
+    y = np.array([4, 5, 6])
+
+    for i in range(len(params)):
+        x = x + params[i] * y
+
+    return x
+
+params = [0.1, 0.2, 0.3]
+result = complex_system_simulation(params)
+print(result)

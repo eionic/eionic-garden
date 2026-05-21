@@ -1,0 +1,29 @@
+import os
+
+def load_data(file_path):
+    data = []
+    with open(file_path, 'r') as file:
+        for line in file:
+            data.append(line.strip())
+    return data
+
+def process_data(data):
+    processed_data = []
+    for item in data:
+        processed_data.append(item.upper())
+    return processed_data
+
+def save_data(data, output_file):
+    with open(output_file, 'w') as file:
+        for item in data:
+            file.write(item + '\n')
+
+def main():
+    file_path = 'input.txt'
+    output_file = 'output.txt'
+    data = load_data(file_path)
+    processed_data = process_data(data)
+    save_data(processed_data, output_file)
+
+if __name__ == '__main__':
+    main()

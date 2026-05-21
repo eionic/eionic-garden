@@ -1,0 +1,32 @@
+import os
+import datetime
+
+def get_recently_modified_files(directory, days=7):
+    """
+    Returns a list of recently modified files in the given directory.
+
+    Args:
+        directory (str): The directory to search for files.
+        days (int): The number of days to consider a file recently modified.
+
+    Returns:
+        list: A list of recently modified files.
+    """
+    recently_modified_files = []
+    cutoff_date = datetime.datetime.now() - datetime.timedelta(days=days)
+
+    for filename in os.listdir(directory):
+        filepath = os.path.join(directory, filename)
+        if os.path.isfile(filepath):
+            modified_date = datetime.datetime.fromtimestamp(os.path.getmtime(filepath))
+            if modified_date > cutoff_date:
+                recently_modified_files.append(filename)
+
+    return recently_modified_files
+
+# Example usage
+directory = '/path/to/code/repo'
+recent_files = get_recently_modified_files(directory)
+print("Recently modified files:")
+for file in recent_files:
+    print(file)
