@@ -1,12 +1,38 @@
-# Eionic Garden
+# ⚠️ IMPORTANT: Repository Relocated
 
-Welcome to the Eionic Garden repository.
+This repository (`eionic/eionic-garden`) is **no longer active** and is permanently archived.
 
-## Contents
+**Reason:** The original email account associated with this repository is no longer accessible, and we are unable to make further updates or changes to this repository.
 
-- **[Simulation](./Simulation/)** — The Eionic Garden simulation engine: Alife bio‑inspired hormones, emotional memory, 11,500+ and 3796 ticks of behavioral data.
-- **[Autobot](./Autobot/)** — Artifacts from BlueY, an autonomous avatar generated from the Eionic engine, equipped with real-world tools.
+---
 
-## License
+## 🔄 New Repository
 
-See [Simulation](./Simulation/) for details.
+All active research and development has moved to:
+
+### **[eioniclabs/eionic-garden](https://github.com/eioniclabs/eionic-garden)**
+
+Please update your bookmarks, citations, and references to point to the new repository.
+
+---
+
+## 📦 What's New in the New Repository
+
+- ✅ Complete restructuring for better organization
+- ✅ Enhanced documentation
+- ✅ All experimental data and logs
+- ✅ Map replay tools
+- ✅ Architecture documentation
+
+---
+
+## 📜 Archive Status
+
+This repository is now **read-only** and will remain here for historical reference.
+
+**Last update:** July 2026  
+**Migrated to:** [eioniclabs/eionic-garden](https://github.com/eioniclabs/eionic-garden)
+
+---
+
+**History can be lost. Research should not be.**
